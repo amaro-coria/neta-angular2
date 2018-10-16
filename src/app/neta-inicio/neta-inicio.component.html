@@ -1,3 +1,13 @@
-<p>
-  neta-inicio works!
-</p>
+<div class="card" style="width: 18rem;"
+    *ngFor="let c of arrayClientes" >
+  <img class="card-img-top"
+    src="{{ c.clienteImagen }}"
+    alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">
+      {{ c.clienteNombre }} {{ c.clienteApellido }}
+    </h5>
+    <p class="card-text">Contenido desde sitio remoto</p>
+    <a href="#" class="btn btn-primary">OK</a>
+  </div>
+</div>
